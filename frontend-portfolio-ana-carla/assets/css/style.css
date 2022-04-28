@@ -1,0 +1,454 @@
+/* geral */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Sassy+Frass&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-font-color: #464646;
+    --black-color: #000000;
+    --light-blue-bg: #fafad2;
+    --white-color: #fff5ee;
+    --btn-blue: #d2691e;
+}
+ body, html {
+     overflow-x: hidden !important;
+ }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: var(--main-font-color);
+    background-color: #f5deb3;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+    height: 80px;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 25px;
+}
+.logo p {
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: 700;
+}
+nav {
+    width:auto;
+    display: flex;    
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    margin-left: 10px;
+    padding: 10px 5px;
+    position: relative;
+}
+nav ul li a {
+    color: var(--main-font-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: var(--black-color);
+}
+nav ul li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: var(--main-font-color);
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+}
+nav .email li a{
+    font-weight: 700;
+}
+
+
+/* main */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* banner section */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+    margin: 60px auto;
+}
+.left-side-banner {
+    margin-right: 10px;
+}
+.left-side-banner h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.left-side-banner p {
+    font-size: 1.4rem;
+    margin: 25px auto;
+    font-weight: 400;
+}
+.social-media-links ul {
+    display: flex;
+}
+.social-media-links ul li{
+    margin-right: 30px;
+}
+.social-media-links ul li a {
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.social-media-links ul li a img {
+    margin-left: 5px;
+    width: 10px;
+}
+.right-side-banner img {
+    width: 360px;
+    border-radius: 50%;
+}
+
+
+/* About section */
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue-bg);
+    height: 383px;
+}
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 980px;
+    height: 255px;
+}
+.about-wrapper h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about-wrapper p {
+    width: 730px;
+    height: 133px;
+    font-size: 1rem;
+    color: var(--black-color);
+}
+.about-wrapper h3 {
+    font-family: 'Sassy Frass', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+
+/* Skills - Hobbies */
+
+.skills-hobbies {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.skills, .hobbies {
+    width: 980px;
+    height: 255px;     
+}
+.skills h2, .hobbies h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.skills-hobbies-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box {
+    min-width: 175px;
+    height: 175px;
+    background-color: var(--white-color);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    margin-left: 16px
+}
+.box h4 {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    margin-left: 16px
+}
+
+.skills {
+    margin-top: 50px;
+}
+.hobbies {
+    margin-bottom: 50px;
+}
+
+
+
+/* Education */
+.academic-education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 580px;
+    background-color: var(--light-blue-bg);
+}
+.academic-education h2 {
+    font-size: 2rem;
+    margin-top: 100px;
+}
+.academic-education-wrapper {
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.school-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-color: var(--white-color);    
+}
+.schools h3 {
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+.schools p {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+.school-box img {
+    width: 190px;
+}
+
+
+/* experience */
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.experience h2 {
+    margin: 40px auto;
+    font-size: 2rem;
+}
+.experience-wrapper {
+    width: 980px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.experience-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+.experience-item img {
+    width: 600px;
+    -webkit-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
+}
+.info {
+    width: 340px;
+    height: 110px;
+    margin: auto 10px;
+}
+.info h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.info p{
+    font-size: 1rem;
+    margin: 5px auto;
+}
+.info ul {
+    display: flex;
+}
+.btn {
+    width: 105px;
+    background-color: var(--white-color);
+    border: 1px solid var(--btn-blue);
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.btn-demo {
+    background-color:#deb887;
+}
+.btn-github a {
+    display: inline-block;
+    color: var(--btn-blue);
+    padding: 15px 10px;    
+}
+.btn-demo a {
+    display: inline-block;
+    color: var(--white-color);
+    padding: 15px 15px;
+}
+
+
+/* Contato */
+.contact {
+    width: 100%;
+    height: 700px;
+    background-color: var(--light-blue-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form h2 {
+    font-size: 2.1rem;
+}
+form p {
+    margin: auto auto 20px auto;
+}
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 980px;
+}
+.phone-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000022;
+    height: 500px;
+    width: 400px;
+    margin-right: 50px;
+}
+.phone-image img {
+    width: 250px;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #e6e6fa;
+    position: relative;
+    outline: none;
+    border-radius: 3px;
+}
+.input-label, .textarea-label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    pointer-events: none;
+    font-size: 0.9rem;
+    transition: 0.4s;
+    color: #add8e6;
+}
+
+.input-name, .input-email, .input-subject, .input-textarea {
+    position: relative;
+}
+#name:focus, #email:focus, #subject:focus, #msg:focus  {
+    border-bottom-color: var(--btn-blue);
+}
+
+#name:focus ~label,
+#name:not(:placeholder-shown) ~label,
+#email:focus ~label,
+#email:not(:placeholder-shown) ~label,
+#subject:focus ~label,
+#subject:not(:placeholder-shown) ~label,
+textarea:focus + label{
+    top: -2px;
+    color: var(--btn-blue);
+    font-size: 0.7rem;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+    padding: 15px;
+}
+/* textarea:focus + label{
+    top: -2px;
+    color: var(--btn-blue);
+    font-size: 0.7rem;
+} */
+.btn-send-message {
+    width: 150px;
+    height: 50px;
+    color: var(--white-color);
+    background-color: var(--btn-blue);
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--white-color);
+    text-align: center;
+}
+footer p {
+    margin-top: 40px
+}
+
+
+
+
+
+
+
+
+
+
+
