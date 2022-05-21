@@ -48,13 +48,7 @@
         width: 220px;
         height: 340px;
     }
-    .experience-wrapper {
-        width: 750px;
-    }
-    .experience-item img {
-        width: 450px;
-        margin-bottom: 40px;
-    }
+
     .contact-wrapper {
         width: 750px;
     }
@@ -165,44 +159,12 @@
     .experience-wrapper {
         width: 620px;
         height: auto;
-    }
-    .experience-item {
-        margin: 0px;
-    }
+    }    
     .contact-wrapper {
         width: 620px;
         padding: 0 10px;
     }
-    .experience {
-        height: 2650px;
-    }
-    .experience h2 {
-        margin: auto;
-        font-size: 1.7rem;
-    }
-    .experience-wrapper {
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 40px;
-    }
-    .experience-item {
-        display: block;
-        position: relative;
-        height: 570px;
-        margin-bottom: 40px;     
-    }
-    .experience-item img {
-        position: absolute;
-        width: 620px;
-        padding: 0 10px;
-    }
-    .info {
-        width: 340px;
-        height: 110px;
-        position: absolute;
-        top: 450px;
-    }
+    
     .btn {
         margin-top: 5px;
     }
@@ -287,34 +249,8 @@
         margin-bottom: 10px;
         margin-left: 10px
     }
-
-
-    .experience {
-        height: auto;
-    }
-    .experience h2 {
-        font-size: 1.5rem;
-        margin-top: 50px;
-    }
-
-    .experience-item {
-        display: block;
-        position: relative;
-        height: 380px;
-        width: 350px;
-        margin-bottom: 40px;  
-    }
-    .experience-item img {
-        width: 350px;
-        padding: 0 10px;
-        top: 50px;
-    }
-    .info {
-        width: 340px;
-        height: 110px;
-        top: 270px;
-    }
+    
     form {
         width: 350px;
     }   
-}
+} 

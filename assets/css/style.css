@@ -130,6 +130,11 @@ main {
     font-size: 1rem;
     font-weight: 500;
 }
+
+.social-media-links ul li a:hover{
+    color:#2A7AE4;
+
+}
 .social-media-links ul li a img {
     margin-left: 5px;
     width: 10px;
@@ -209,8 +214,19 @@ main {
     width: 50px;
     height: 50px;
     margin-bottom: 16px;
-    margin-left: 16px
+    margin-left: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: 1s all ease-in-out;
 }
+
+
+.box img:hover{
+    filter: brightness(1.4);  
+    transform: scale(1.1);
+
+}
+
 .box h4 {
     font-size: 1rem;
     margin-bottom: 16px;
@@ -223,7 +239,6 @@ main {
 .hobbies {
     margin-bottom: 50px;
 }
-
 
 
 /* Education */
@@ -265,57 +280,20 @@ main {
 }
 .school-box img {
     width: 190px;
+    filter: brightness(0.8);
+    cursor: pointer;
+    position: relative;
+    transition: 1s all ease-in-out;
 }
 
+.school-box img:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    filter: brightness(1);
+    transform: scale(1.2);
+    z-index: 2;
+  }
 
-/* experience */
-.experience {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-.experience h2 {
-    margin: 40px auto;
-    font-size: 2rem;
-}
-.experience-wrapper {
-    width: 980px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-.experience-item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px auto;
-}
-.experience-item img {
-    width: 600px;
-    -webkit-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
-}
-.info {
-    width: 340px;
-    height: 110px;
-    margin: auto 10px;
-}
-.info h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-.info p{
-    font-size: 1rem;
-    margin: 5px auto;
-}
-.info ul {
-    display: flex;
-}
 .btn {
     width: 105px;
     background-color: var(--white-color);
@@ -323,19 +301,35 @@ main {
     height: 50px;
     margin-right: 20px;
     margin-top: 20px;
+
 }
 .btn-demo {
     background-color:#deb887;
 }
+
+.btn-demo :hover{
+cursor: pointer;
+background-color: #2A7AE4;
+transition: 0.4s all;
+
+}
+
 .btn-github a {
     display: inline-block;
     color: var(--btn-blue);
     padding: 15px 10px;    
 }
+.btn-github a:hover{
+    cursor: pointer;
+    background-color: #7badee;
+    transition: 0.4s all;
+
+}
 .btn-demo a {
     display: inline-block;
     color: var(--white-color);
     padding: 15px 15px;
+    
 }
 
 
@@ -426,10 +420,16 @@ textarea {
 .btn-send-message {
     width: 150px;
     height: 50px;
-    color: var(--white-color);
+    color: blue;
     background-color: var(--btn-blue);
     border: none;
     cursor: pointer;
+}
+
+.btn-send-message:hover{
+    background-color: green;
+    color: rgb(39, 70, 247);
+
 }
 
 footer {

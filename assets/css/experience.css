@@ -1,0 +1,95 @@
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.experience h2 {
+  margin: 40px auto;
+  font-size: 2rem;
+}
+.experience-wrapper {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+
+/* individual*/
+.experience-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 10px;
+}
+.experience-item:nth-of-type(2n){
+  flex-direction: row-reverse;
+}
+.experience .image{
+  padding: 10px;
+  width: 60%;
+  display: flex;
+  justify-content:center;
+  height: 450px;
+  transition: 0.4s all;
+  
+}
+
+.experience-item img {
+  max-width: 100%;
+  -webkit-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
+  transition: 0.4s all;
+  filter: brightness(0.8);
+  
+}
+
+.experience-item img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(1);
+  transform:unset;
+  transform:inherit;
+  border-radius: 15%;
+
+}
+
+.info{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  font-size: 1rem;
+  gap: 6px;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.info ul {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-wrapper {
+    width: 100%;
+  }
+
+  .experience-item, .experience-item:nth-of-type(2n) {
+    flex-direction: column;
+  }  
+  .experience .image{
+    width: 100%;
+     
+  }
+  
+}
+
+
+
